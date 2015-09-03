@@ -13,7 +13,7 @@ locale: en_US
 twitter_username: ridwanshere
 github_username:  kaziridwan
 disqus_shortname: freshman21
-favicon:     "/images/favicon.ico"
+favicon:     "/assets/images/favicon.ico"
 aboutme: Hi, this is Lijia Yu. I made the Freshman21 theme. Please enjoy it. # these are shown on aboutme-sidebar.
 aboutme_photo: https://i.imgur.com/Mdc4szJl.jpg # your photo.
 
