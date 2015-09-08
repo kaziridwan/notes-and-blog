@@ -4,10 +4,10 @@
   <p>{{site.aboutme}}</p>
   {% if site.ShowContactInfo == "True" %}
 
-  <p>
+  <div>
     You can contact me via:
-  </p>
-  <p>    
+  </div>
+  <div>    
     {% if site.email != empty %}
     <a href="mailto:{{site.email}}" title="mailto: {{site.email}}">Email</a> /
     {% endif %}
@@ -17,7 +17,7 @@
     {% if site.twitter_username != empty %}
     <a href="https://twitter.com/{{site.twitter_username}}" title="TwitterID: {{site.twitter_username}}">Twitter</a>
     {% endif %}
-  </p>
+  </div>
 
   {% endif %}
 
