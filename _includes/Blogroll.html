@@ -1,8 +1,13 @@
 <div class="sidebar-module">
   <h4 data-toggle="collapse" data-target="#blogroll-sidebar" aria-expanded="false" aria-controls="blogroll-sidebar">{{ site.locales[site.default_locale].Blogroll }}</h4>
   
-  <p class="collapse" id="blogroll-sidebar">{% for friend in site.Blogroll %}
-  	<li><a href="{{ friend.href }}" title="{{ friend.title }}">{{ friend.name }}</a></li>
-  	{% endfor %}</p>
+  <div class="collapse" id="blogroll-sidebar">
+	<ul>
+		{% for friend in site.Blogroll %}
+		<li><a href="{{ friend.href }}" title="{{ friend.title }}">{{ friend.name }}</a></li>
+		{% endfor %}
+	</ul>
+
+  </div>
 </div>
 
