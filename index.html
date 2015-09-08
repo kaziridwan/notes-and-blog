@@ -1,13 +1,10 @@
 ---
 layout: new-default
 ---
-
-<div class="home">
-  <div class="post" itemscope itemtype="http://schema.org/BlogPosting" >
-    
+<div id="page-content-wrapper" class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="container-fluid">
     {% for post in paginator.posts %}
-  
-    <header class="post-header">
+     <header class="post-header">
       <h1 itemprop="name" class="post-title">
         <a itemprop="url" class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
       </h1>
@@ -32,8 +29,8 @@ layout: new-default
     <article class="post-content" itemprop="articleBody">
       {{ post.content }}
     </article> <hr />
-    
+
     {% endfor %}
-  
+    {% include post_pagination.html %}
   </div>
 </div>
